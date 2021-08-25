@@ -1,0 +1,118 @@
+body {
+  background: linear-gradient(#000000, #434343);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Signika", sans-serif;
+}
+
+body header {
+  color: white;
+  font-size: calc(2rem + 8vw);
+  font-family: "Allison", cursive;
+}
+
+details li h3:hover {
+  color: #9198e5;
+  cursor: pointer;
+}
+
+body span {
+  color: #c350f8;
+}
+
+body main {
+  width: 90vw;
+  margin-top: 3rem;
+}
+
+.All_section {
+  display: flex;
+  display: flex;
+  align-items: center;
+}
+
+.All_section h1 {
+  font-size: calc(0.5rem + 0.5vw);
+  color: #9198e5;
+}
+.All_section h2 {
+  font-size: calc(0.5rem + 0.8vw);
+  color: white;
+  margin-left: 1rem;
+  border: 0.2rem solid #9198e5;
+  padding: 0.5rem;
+  border-radius: 2rem;
+  height: calc(0.5rem + 1vw);
+  width: calc(0.5rem + 1vw);
+  text-align: center;
+  /* 
+  color: blanchedalmond;
+ 
+
+  text-align: center;
+  padding: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 2rem; */
+}
+
+summary {
+  font-weight: bolder;
+  font-size: 1.2rem;
+  color: #e01a04;
+  padding: 1rem;
+}
+
+details {
+  border: 3px dotted #e01a04;
+  list-style: url("arow.png");
+  padding-left: 0.5rem;
+}
+
+details h3 {
+  font-size: 1.2rem;
+  color: white;
+  margin-top: 1rem;
+}
+
+#antal_slider,
+#bish_slider,
+#bosh_slider {
+  width: calc(5rem + 50vw);
+  margin-left: 1rem;
+}
+
+#grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+#grid div {
+  height: 1.5rem;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #c350f8 dotted 3px;
+
+  text-align: center;
+  padding: 0.7rem;
+
+  font-size: 1rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  color: white;
+  margin-top: 1rem;
+  transition: border-color 0.66s ease-out, font-size 0.3s ease-out;
+  background-color: #000000;
+}
+
+#grid div:hover {
+  background-color: #00000079;
+  font-size: 1.5rem;
+  transition: border-color 0s, font-size 0.3s ease-out;
+}

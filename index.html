@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="syle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header> Bish <span>&</span> Bosh</header>
+    <main>
+    <details >
+        <summary>Reglar </summary>
+
+        <ul>
+            <li><h3>Bish-Bosh listar tal mellan 1 och det du väljer nedan.</h3></li>
+            <li><h3>Om talet är jämnt delbart med ditt valda Bish-tal() Visas 'Bish' istället för talet.</h3></li>
+            <li><h3>Om talet är jämnt delbart med ditt valda Bosh-tal() Visas 'Bosh' istället för talet.</h3></li>
+            <li><h3>OM talet är jämt delbart med båda dina tal visas "Bish-Bosh".</h3></li>
+        </ul>
+    </details>
+
+    <div class="All_section">
+       <h1>Antal nummer :</h1>
+       <input type="range" id="antal_slider" value="1" min="1" max="100" onchange="updateTextInput();">
+
+       <h2 id="antal_value">1</h2>
+    </div>
+
+    <div class="All_section">
+        <h1>Bish nummer :</h1>
+        <input type="range" id="bish_slider" value="1" min="1" max="100" onchange="updateGride();" >
+        <h2 id="bish_value">1</h2>
+    </div>
+
+    <div class="All_section">
+        <h1>Bosh nummer :</h1>
+        <input type="range" id="bosh_slider" value="1" min="1" max="100" onchange="updateGride();">
+        <h2 id="bosh_value">1</h2>
+    </div>
+
+
+
+
+    <div id="grid"></div>
+    </main>
+<script src="main.js"></script>
+
+
+</body>
+</html>
