@@ -29,33 +29,36 @@ body main {
 
 .All_section {
   display: flex;
-  display: flex;
   align-items: center;
 }
 
 .All_section h1 {
-  font-size: calc(0.5rem + 0.5vw);
+  font-size: calc(0.7rem + 0.7vw);
   color: #9198e5;
 }
 .All_section h2 {
-  font-size: calc(0.5rem + 0.8vw);
+  font-size: calc(0.5rem + 0.5vw);
   color: white;
+  background: #000000;
   margin-left: 1rem;
-  border: 0.2rem solid #9198e5;
+  border: 0.2rem dotted #c350f8;
   padding: 0.5rem;
   border-radius: 2rem;
-  height: calc(0.5rem + 1vw);
-  width: calc(0.5rem + 1vw);
+  height: calc(0.5rem + 0.7vw);
+  width: calc(0.5rem + 0.7vw);
   text-align: center;
-  /* 
-  color: blanchedalmond;
- 
+  cursor: pointer;
+  transition: color 0.66s ease-out, color 0.9s ease-out;
+}
 
-  text-align: center;
-  padding: 0.5rem;
-  width: 1rem;
-  height: 1rem;
-  border-radius: 2rem; */
+.All_section h2:hover {
+  transition: color 0.66s ease-out, color 0.9s ease-out;
+
+  color: red;
+}
+
+#First_section {
+  margin-top: 2rem;
 }
 
 summary {
@@ -72,7 +75,7 @@ details {
 }
 
 details h3 {
-  font-size: 1.2rem;
+  font-size: calc(0.8rem + 0.5vw);
   color: white;
   margin-top: 1rem;
 }
@@ -112,6 +115,8 @@ details h3 {
 }
 
 #grid div:hover {
+  cursor: pointer;
+
   background-color: #00000079;
   font-size: 1.5rem;
   transition: border-color 0s, font-size 0.3s ease-out;
